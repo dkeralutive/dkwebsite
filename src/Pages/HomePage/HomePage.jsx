@@ -27,17 +27,18 @@ import Footer from '../../Components/Footer/Footer'
 
 const TestimonialCard = ({ description, name, title }) => {
     const cardStyle = {
-        width: '367px',
-        height: '193px',
+        width: '100%',
+        height: 'fit-content',
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-between",
+        gap: "16px",
         fontFamily: 'Poppins',
         fontStyle: 'normal',
         fontWeight: '500',
-        fontSize: '18px',
-        lineHeight: '28px',
+        fontSize: '17px',
+        lineHeight: '27px',
         textAlign: 'center',
         color: '#090914',
     }
@@ -47,7 +48,7 @@ const TestimonialCard = ({ description, name, title }) => {
         fontStyle: 'normal',
         fontWeight: '600',
         fontSize: '16px',
-        lineHeight: '28px',
+        lineHeight: '27px',
         display: 'flex',
         alignItems: 'center',
         textAlign: 'center',
@@ -119,24 +120,10 @@ const DeliveryBox = ({ title, label, image }) => {
 }
 
 const AboutCard = ({ image, description, date }) => {
-    const styles = {
-        width: '322px',
-        height: '472px',
-        background: '#FFFFFF',
-        boxShadow: '0px 4px 4px rgba(35, 40, 105, 0.08)',
-        borderRadius: '15px',
-        display: "grid",
-        gridTemplateRows: "1fr 1fr"
-    }
 
-    const imgStyles = {
-        height: '257px',
-        width: "100%",
-        objectFit: "cover"
-    }
     return (
-        <div style={styles}>
-            <img style={imgStyles} src={image} alt="photograph-img" />
+        <div className='aboutCard-container'>
+            <img classname="aboutCard-img" src={image} alt="photograph-img" />
             <div className="content-right-group">
                 <h3>{description}</h3>
                 <span>{date}</span>
@@ -147,6 +134,15 @@ const AboutCard = ({ image, description, date }) => {
 
 const HomePage = () => {
     const [activeLink, setActiveLink] = useState("home")
+    const [activeSideNav, setActiveSideNav] = useState(false)
+
+    const handleClick = () => {
+        setActiveSideNav(prev => !prev)
+    }
+
+    const styles = {
+        right: activeSideNav ? "0px" :  "-500px"
+    }
 
     useEffect(() => {
         setActiveLink("home")
@@ -156,15 +152,15 @@ const HomePage = () => {
             <main>
                 <div className="home-nav">
                     <img src={Logo} alt="home-logo" className='home-logo' />
-                    <div className="menu-list">
+                    <div className="menu-list" style={styles}>
                         <Link to="/" onClick={() => setActiveLink("home")} className={activeLink === "home" ? "home-active" : ""}>Home</Link>
                         <Link to="/fashion" onClick={() => setActiveLink("fashion")} className={activeLink === "fashion" ? "home-active" : ""}>Fashion</Link>
                         <Link to="/software" onClick={() => setActiveLink("software")} className={activeLink === "software" ? "home-active" : ""}>Software</Link>
                         <Link to="/art-craft" onClick={() => setActiveLink("art-craft")} className={activeLink === "art-craft" ? "home-active" : ""}>Art/Craft</Link>
                         <Link to="/about" onClick={() => setActiveLink("about")} className={activeLink === "about" ? "home-active" : ""}>About</Link>
                         <Link to="/contact-us" onClick={() => setActiveLink("contact-us")} className={activeLink === "contact-us" ? "home-active" : ""}>Contact Us</Link>
-                        <HiOutlineMenuAlt1 className='menu-open-icon' />
                     </div>
+                    <HiOutlineMenuAlt1 onClick={handleClick} className='menu-open-icon' />
                 </div>
 
                 <img className="technology-text" src={Technology} alt="home-text" />
