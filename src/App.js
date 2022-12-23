@@ -1,43 +1,25 @@
-import logo from './images/Group.png';
-import logos from './images/Group1915.png';
-import eclipse from './images/Ellipse.png';
-import group11 from './images/Group111.png';
-
-
-
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import HomePage from "./Pages/HomePage/HomePage";
+import Error from "./Pages/Error/Error";
+import About from "./Pages/About/About";
+import ArtAndCraft from "./Pages/ArtAndCraft/ArtAndCraft";
+import ContactUs from "./Pages/ContactUs/ContactUs";
+import Fashion from "./Pages/Fashion/Fashion";
+import Software from "./Pages/Software/Software";
 
 function App() {
   return (
-    <div className="Apps">
-       <div className="App">
-        <img src={logo}/>
-        <div children="nav">
-        <img src={logos}/>
-        <img src={group11}/>
-
-       </div>
-       {/* <div  className="menuside">
-
-       </div> */}
-       <div className="menu">
-       <img src={eclipse}/>
-       </div>
-       <div>
-        <div  className="menutext">
-        Intrigued by beauty, fascinated by technology and fuelled with 
-        an everlasting devotion to digital craftsmanship and meaningful 
-        aesthetics.
-        </div>
-       </div>
-      
-       </div>
-       
-
-      
-       
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/art-craft" element={<ArtAndCraft />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/fashion" element={<Fashion />} />
+        <Route path="/software" element={<Software />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

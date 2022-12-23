@@ -1,95 +1,26 @@
-.App {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  overflow-x: hidden;
+  box-sizing: border-box !important;
+}
+
+
+body {
   width: 100vw;
-  height: 150vh;
-  text-align: center;
-  background: url(./images/image605.png);
-  background-size: cover;
-  overflow-x: hidden !important;
-
-  
-/* position: absolute;
-left: -0.13%;
-right: 0%;
-top: 0%;
-bottom: 85.53%;
-background: url(./images/image605.png);
-mix-blend-mode: overlay;
-opacity: 0.4;
-border-radius: 14px */
-
-}
-.nav{
-  position: absolute;
-width: 1275px;
-height: 86px;
-left: 103px;
-top: 48px;
-}
-.menu{
-  position: absolute;
-  width: 115px;
-  height: 115px;
-  left: 116px;
-  top: 797px;
-  background: #EA0C0F;
-
-}
-.menuside{
-position: absolute;
-width: 215.24px;
-height: 214.46px;
-left: 1122px;
-top: 385px;
+  min-height: 100vh;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-.menutext{
-  position: absolute;
-width: 670px;
-height: 78px;
-left: 257px;
-top: 819px;
 
-font-family: 'Archivo';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 26px;
-
-color: #7e3535 !important;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  position: absolute;
-  left: -0.13%;
-  right: 0%;
-  width: 100vw;
-  height: 100vh;
-  top: 0%;
-  bottom: 85.53%;
-  mix-blend-mode: overlay;
-  opacity: 0.4;
-  border-radius: 14px;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-container {
+  width: 80% !important;
+  height: fit-content;
+  margin: 2rem auto !important;
 }

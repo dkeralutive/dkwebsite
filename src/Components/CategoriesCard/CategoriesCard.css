@@ -1,0 +1,44 @@
+.categories-card-container {
+    width: 100%;
+    height: fit-content;
+    background: white;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+    border-radius: 14px;
+    padding: 20px 21px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    transform: translate(18px);
+}
+
+.categories-card-img {
+    object-fit: fill;
+}
+
+.categories-card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: "10px"
+}
+
+.categories-card-group h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 26px;
+    color: #2F2C4A;
+    overflow: hidden;
+}
+
+.categories-card-text {
+    width: 372px;
+    height: 84px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #888888;
+}
