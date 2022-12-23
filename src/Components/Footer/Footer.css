@@ -1,0 +1,117 @@
+footer {
+    width: 100%;
+    height: 350px;
+    background: #F8FAFC;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 20% 25% 1fr;
+    grid-template-rows: 85% 15%;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+
+.footer-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.footer-col-1 img {
+    width: 82.59px;
+}
+
+.footer-col-1 span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #71717A;
+}
+
+.footer-col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.footer-col-2 h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #94A3B8;
+}
+
+.footer-col-2 a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #090914;
+    cursor: pointer;
+}
+
+.footer-col-2 a.red {
+    color: #E80E0F;
+}
+
+#footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#footer-form input[type=email] {
+    width: 306px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E7;
+    border-radius: 10px;
+    padding-left: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+}
+
+#footer-form button {
+    width: 306px;
+    height: 55px;
+    background: #E80E0F;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.copyright {
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #090914;
+}
+
+

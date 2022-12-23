@@ -1,0 +1,28 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 357px;
+    height: 350px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: flex-start;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #18181B;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 357px;
+    height: 320px;
+    object-fit: fill;
+}
