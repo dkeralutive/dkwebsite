@@ -146,7 +146,6 @@ const HomePage = () => {
 
     useEffect(() => {
         setActiveLink("home")
-        setActiveSideNav(false)
     }, [])
     return (
         <div>
