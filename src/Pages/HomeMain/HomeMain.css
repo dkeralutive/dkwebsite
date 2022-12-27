@@ -115,8 +115,6 @@
     color: #D4D4D8;
 }
 
-
-
 /* ================================ */
 .category-cards {
     display: grid;
@@ -206,3 +204,4 @@
 
 /* FOR LARGE DEVICES */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {}
+

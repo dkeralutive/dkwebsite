@@ -731,7 +731,11 @@ main {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5rem;
+<<<<<<< HEAD
         height: fit-content !important;
+=======
+        height: 780px !important;
+>>>>>>> df49910b88bd66632a9849990cf3bac48e0210e4
         overflow-y: hidden;
     }
 

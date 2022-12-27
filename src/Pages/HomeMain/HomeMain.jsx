@@ -12,6 +12,8 @@ import ItemsBg1 from "../../Assets/box-6-bg.png"
 import ItemsBg2 from "../../Assets/box-2-bg.png"
 import ItemsBg3 from "../../Assets/box-4-bg.png"
 import Footer from "../../Components/Footer/Footer"
+import { FiSearch } from 'react-icons/fi';
+
 
 const HomeMain = () => {
   return (
@@ -39,6 +41,7 @@ const HomeMain = () => {
           </span>
         </div>
       </main>
+
       <section className="page-container-lg popular-categories-section">
         <h1>Popular Categories</h1>
         <div className="category-cards mt-4">
