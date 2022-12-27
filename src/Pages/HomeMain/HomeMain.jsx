@@ -3,7 +3,7 @@ import "./HomeMain.css"
 import NavBar from "../../Components/NavBar/NavBar"
 import PopularCategoriesCard from "../../Components/PopularCategoriesCard/PopularCategoriesCard"
 import ItemsCard from "../../Components/ItemsCard/ItemsCard.jsx"
-import { FiSearch } from 'react-icons/fi';
+// import  FiSearch from 'react-icons/fi';
 import CatForWomen from "../../Assets/cat-for-women.png"
 import CatForMen from "../../Assets/cat-for-men..png"
 import CatForKids from "../../Assets/cat-for-kids.png"

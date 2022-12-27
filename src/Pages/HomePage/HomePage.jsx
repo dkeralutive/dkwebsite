@@ -123,11 +123,8 @@ const AboutCard = ({ image, description, date }) => {
 
     return (
         <div className='aboutCard-container'>
-<<<<<<< HEAD
-            <img className="aboutCard-img" src={image} alt="photograph-img" />
-=======
+
             <img classname="aboutCard-img" src={image} alt="photograph-img" />
->>>>>>> df49910b88bd66632a9849990cf3bac48e0210e4
             <div className="content-right-group">
                 <h3>{description}</h3>
                 <span>{date}</span>
