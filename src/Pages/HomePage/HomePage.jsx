@@ -123,7 +123,7 @@ const AboutCard = ({ image, description, date }) => {
 
     return (
         <div className='aboutCard-container'>
-            <img classname="aboutCard-img" src={image} alt="photograph-img" />
+            <img className="aboutCard-img" src={image} alt="photograph-img" />
             <div className="content-right-group">
                 <h3>{description}</h3>
                 <span>{date}</span>

@@ -117,8 +117,92 @@
 
 
 
-
-
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-    
+/* ================================ */
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
+
+.popular-categories-section h1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    color: #151518;
+}
+
+.items-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+
+
+/* FOR SMALL DEVICES */
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .main {
+        padding-top: 120px;
+        gap: 16px;
+    }
+
+    .main h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .main span {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .achievements {
+        margin-top: 0px;
+    }
+
+    .popular-categories-section h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .category-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .popular-categories-card-container {
+        width: 100%;
+        height: 200px;
+        padding: 25px;
+    }
+
+    .top-sales {
+        margin-top: 2rem !important;
+    }
+
+    .items-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    #home-main-search-form {
+        padding: 0 20px !important;
+    }
+}
+
+
+
+/* FOR MEDIUM DEVICES */
+@media only screen and (min-width: 577px) and (max-width: 991px) {}
+
+
+
+
+/* FOR LARGE DEVICES */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}

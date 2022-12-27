@@ -1,0 +1,76 @@
+.items-card-container {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 18px 27px;
+    position: relative;
+    height: 450px;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+.items-card-prices {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 60%;
+}
+
+.items-card-prices del {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.items-card-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
+    color: #FFFFFF !important;
+    position: absolute;
+    top: 65%;
+}
+
+.items-card-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #E4E4E7;
+    position: absolute;
+    top: 76%;
+}
+
+.stars {
+    position: absolute;
+    top: 86%;
+}
+
+.star-icon {
+    font-size: 19px;
+    color: white;
+
+}
+
+.items-card-container img {
+    position: absolute;
+    bottom: -50px !important;
+    right: -40px !important;
+    cursor: pointer;
+}
